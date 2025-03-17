@@ -35,7 +35,7 @@ MEDIA_ROOT=os.path.join(BASE_DIR,"media")
 STATIC_URL="/static/"
 STATIC_ROOT=os.path.join(BASE_DIR,"static")
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['Agam21.pythonanywhere.com', '127.0.0.1']
 
 
 # Application definition
