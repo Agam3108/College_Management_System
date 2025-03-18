@@ -35,8 +35,8 @@ MEDIA_ROOT=os.path.join(BASE_DIR,"media")
 STATIC_URL="/static/"
 STATIC_ROOT=os.path.join(BASE_DIR,"static")
 
-ALLOWED_HOSTS = ['Agam21.pythonanywhere.com', '127.0.0.1']
-CSRF_TRUSTED_ORIGINS = ['https://Agam21.pythonanywhere.com']
+ALLOWED_HOSTS = ['mysite-8ffb.onrender.com']
+CSRF_TRUSTED_ORIGINS = ['https://mysite-8ffb.onrender.com/']
 
 # Application definition
 
