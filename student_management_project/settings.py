@@ -25,7 +25,7 @@ AUTH_USER_MODEL = 'student_management_app.CustomUser'
 # See https://docs.djangoproject.com/en/3.2/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'django-insecure-t4s#&uwtrhsf7%%27vme+8zpzp@(hzj_vw8+dptr8dis%gd52v'
+SECRET_KEY = 'v9DzVLaNDky+jri82clOx7wgifPqCOyWWGhNy6SI7pQ='
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
@@ -93,7 +93,7 @@ WSGI_APPLICATION = 'student_management_project.wsgi.application'
 DATABASES = {
     'default': dj_database_url.config(
         # Replace this value with your local database's connection string.
-        default='postgresql://postgres:postgres@localhost:5432/mysite',
+        default='postgresql://mysite:3CKAnuRFhnOpwZmRrMzo631kYj8rHZog@dpg-cvcf3ahc1ekc73eqhhi0-a/mysite_xwvr',
         conn_max_age=600
     )
 }
