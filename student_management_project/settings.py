@@ -39,7 +39,7 @@ STATIC_ROOT=os.path.join(BASE_DIR,"static")
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
-ALLOWED_HOSTS = ['https://college-management-system-20mt.onrender.com/']
+ALLOWED_HOSTS = ['college-management-system-20mt.onrender.com']
 
 
 # Application definition
