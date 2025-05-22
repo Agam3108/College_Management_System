@@ -91,15 +91,15 @@ WSGI_APPLICATION = 'student_management_project.wsgi.application'
 # https://docs.djangoproject.com/en/3.2/ref/settings/#databases
 
 DATABASES = {
-        'default': {
+       'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'mysitedb',
-        'USER': 'postgres',
-        'PASSWORD': 'Agam@200231',
-        'HOST': 'localhost',
-        'PORT': '5432',
+        'NAME': os.getenv("NEON_DB_NAME"),
+        'USER': os.getenv("NEON_DB_USER"),
+        'PASSWORD': os.getenv("NEON_DB_PASSWORD"),
+        'HOST': os.getenv("NEON_HOST"),
+        'PORT': os.getenv("NEON_DB_PORT", "5432"),
     }
-  
+
 }
 
 
