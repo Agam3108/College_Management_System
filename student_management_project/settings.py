@@ -39,7 +39,7 @@ STATIC_ROOT=os.path.join(BASE_DIR,"static")
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
-ALLOWED_HOSTS = ['mysite-8ffb.onrender.com']
+ALLOWED_HOSTS = []
 
 
 # Application definition
@@ -91,11 +91,15 @@ WSGI_APPLICATION = 'student_management_project.wsgi.application'
 # https://docs.djangoproject.com/en/3.2/ref/settings/#databases
 
 DATABASES = {
-    'default': dj_database_url.config(
-        # Replace this value with your local database's connection string.
-        default='postgresql://postgres:postgres@localhost:5432/mysite',
-        conn_max_age=600
-    )
+        'default': {
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'mysitedb',
+        'USER': 'postgres',
+        'PASSWORD': 'Agam@200231',
+        'HOST': 'localhost',
+        'PORT': '5432',
+    }
+  
 }
 
 
